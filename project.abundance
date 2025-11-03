@@ -1,15 +1,162 @@
 {
-    "atomType": "Molecule",
-    "name": "documentation-example",
-    "x": 0,
-    "y": 0,
-    "uniqueID": "id-272",
-    "ioValues": [],
-    "topLevel": true,
-    "allAtoms": [],
-    "allConnectors": [],
-    "unitsKey": "MM",
-    "fileTypeVersion": 1,
-    "compiledBom": {},
-    "filetypeVersion": 1
+  "atomType": "Molecule",
+  "name": "documentation-example",
+  "x": 0,
+  "y": 0,
+  "uniqueID": "id-272",
+  "ioValues": [],
+  "topLevel": true,
+  "allAtoms": [
+    {
+      "atomType": "Output",
+      "name": "Output",
+      "x": 0.98,
+      "y": 0.5,
+      "uniqueID": "id-273",
+      "ioValues": []
+    },
+    {
+      "atomType": "Circle",
+      "name": "Circle",
+      "x": 0.3444293478260869,
+      "y": 0.39820359281437123,
+      "uniqueID": "id-275",
+      "ioValues": [
+        {
+          "name": "diameter",
+          "ioValue": 10
+        }
+      ]
+    },
+    {
+      "atomType": "Rectangle",
+      "name": "Rectangle",
+      "x": 0.27989130434782605,
+      "y": 0.6976047904191617,
+      "uniqueID": "id-278",
+      "ioValues": [
+        {
+          "name": "x length",
+          "ioValue": 10
+        },
+        {
+          "name": "y length",
+          "ioValue": 10
+        }
+      ]
+    },
+    {
+      "atomType": "ShrinkWrap",
+      "name": "Shrink Wrap",
+      "x": 0.4789402173913044,
+      "y": 0.6017964071856288,
+      "uniqueID": "id-282",
+      "ioValues": [
+        {
+          "name": "Shape 1",
+          "ioValue": {
+            "geometry": "circle-5",
+            "dimension": "2D",
+            "tags": [],
+            "plane": {
+              "origin": [
+                0,
+                0,
+                0
+              ],
+              "xDir": [
+                1,
+                0,
+                0
+              ],
+              "normal": [
+                0,
+                0,
+                1
+              ]
+            },
+            "color": "#aad7f2",
+            "bom": []
+          }
+        },
+        {
+          "name": "Shape 2",
+          "ioValue": {
+            "geometry": "move-rectangle-10-10-10-0-0",
+            "dimension": "2D",
+            "plane": {
+              "origin": [
+                0,
+                0,
+                0
+              ],
+              "xDir": [
+                1,
+                0,
+                0
+              ],
+              "normal": [
+                0,
+                0,
+                1
+              ]
+            },
+            "color": "#aad7f2",
+            "tags": [],
+            "bom": []
+          }
+        },
+        {
+          "name": "Shape 3",
+          "ioValue": null
+        }
+      ]
+    },
+    {
+      "atomType": "Move",
+      "name": "Move",
+      "x": 0.3872282608695652,
+      "y": 0.8622754491017963,
+      "uniqueID": "id-287",
+      "ioValues": [
+        {
+          "name": "xDist",
+          "ioValue": 10,
+          "currentEquation": "10"
+        },
+        {
+          "name": "yDist",
+          "ioValue": 0
+        },
+        {
+          "name": "zDist",
+          "ioValue": 0
+        }
+      ]
+    }
+  ],
+  "allConnectors": [
+    {
+      "ap1Name": "geometry",
+      "ap2Name": "Shape 1",
+      "ap1ID": "id-275",
+      "ap2ID": "id-282"
+    },
+    {
+      "ap1Name": "geometry",
+      "ap2Name": "geometry",
+      "ap1ID": "id-278",
+      "ap2ID": "id-287"
+    },
+    {
+      "ap1Name": "geometry",
+      "ap2Name": "Shape 2",
+      "ap1ID": "id-287",
+      "ap2ID": "id-282"
+    }
+  ],
+  "unitsKey": "MM",
+  "fileTypeVersion": 1,
+  "compiledBom": {},
+  "filetypeVersion": 1
 }
